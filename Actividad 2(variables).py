@@ -27,6 +27,8 @@ colegio, menor_de_edad, altura= "ISM NORTH", "Si", 1.70
 print(type(nombre),type(apellido),type(nombre_completo),type(pais),type(ciudad),type(edad),type(anio),type(estado_civil),type(es_verdadero),type(luz_encendida),type(colegio),type(menor_de_edad),type(altura))
 print(len(nombre))
 print(len(nombre_completo))
+longitud = len(nombre) > len(apellido)
+print(longitud)
 #%%
 num1= 5
 num2= 4
@@ -50,9 +52,11 @@ radio = 30
 pi = 3.14
 area_circulo = pi * radio ** 2
 circuferencia_circulo = 2 * pi * radio
+entrada= input("Ingrese el valor del radio: ")
+radio = float(entrada)
+area_circulouser = pi * radio ** 2
+print("El area del circulo es:", area_circulouser)
 # %%
-usuario= radio
-entrada = area_circulo
 name = input("¿Cuál es tu nombre? ")
 apellido = input("¿Cuál es tu apellido? ")
 edad = input("¿Cuál es tu edad? ")
