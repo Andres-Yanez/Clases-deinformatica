@@ -64,3 +64,4 @@ print(f"Nombre en mayúsculas: {nombre_completo.upper()}")
 print(f"Longitud del nombre: {len(nombre_completo)}")
 print(f"¿Contiene la letra 'a'?: {"a" in nombre_completo}")
 print(f"¿El costo es mayor a 100?: {costo_total > 100}")
+#22/04/2026
