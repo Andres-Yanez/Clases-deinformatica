@@ -34,3 +34,7 @@ print(language[2:6:2])
 #%%
 challenge= "thirty Days Of Python"
 print(challenge.capitalize())
+#%%
+challenge= "thirty Days Of Python"
+print(challenge.count("y"))
+print(challenge.count("th"))
