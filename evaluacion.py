@@ -43,7 +43,7 @@ print(len(frase))
 print("Python" in frase)
 print(frase.replace("util", "interesante"))
 print(frase.split())
-# ===== PARTE C =====
+# PARTE C 
 # Programa integrador
 # %%
 nombre = input("Ingrese su nombre:")
