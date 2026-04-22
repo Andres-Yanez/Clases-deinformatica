@@ -32,7 +32,7 @@ valor = superficie * precio
 print("Superficie total: " , superficie)
 print("Valor estimado: ", valor)
 #a) ¿Cuáles eran los errores principales?
-# Los errores principales eran que se estaba usando input() sin declararlos los valores a números.
+# El error principal era que se estaba usando input() sin declararlos los valores a números.
 #b) ¿Por qué la corrección funciona?
 # La corrección funciona porque se convierten los valores ingresados por el usuario a números flotantes.
 # Construcción breve
@@ -46,4 +46,21 @@ print(frase.split())
 # ===== PARTE C =====
 # Programa integrador
 # %%
-
+nombre = input("Ingrese su nombre:")
+apellido = input("Ingrese su apellido:")
+pais = input("Ingrese su país:")
+ancho = float(input("Ingrese el ancho de la vitrina:"))
+alto = float(input("Ingrese el alto de la vitrina:"))
+precio = float(input("Ingrese el precio por metro cuadrado:"))
+area = ancho * alto
+costo_total = area * precio
+nombre_completo = nombre + " " + apellido
+print(f"REPORTE FINAL")
+print(f"Nombre completo: {nombre_completo}")
+print(f"País: {pais}")
+print(f"Área: {area}")
+print(f"Costo total: {costo_total}")
+print(f"Nombre en mayúsculas: {nombre_completo.upper()}")
+print(f"Longitud del nombre: {len(nombre_completo)}")
+print(f"¿Contiene la letra 'a'?: {"a" in nombre_completo}")
+print(f"¿El costo es mayor a 100?: {costo_total > 100}")
