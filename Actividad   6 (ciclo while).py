@@ -21,3 +21,45 @@ while opcion != "C":
         print("Opción invalida")
 
 # %%
+
+##
+contraseña= ""
+con = input("Ingrese la contraseña:")
+while con != "python123":
+    print("Acceso denegado")
+else:
+    print("Acceso permitido")    
+
+## Ciclo for
+numers=[0,1,2,3,4,5]
+for numers in numers:
+    print(numers)
+#%%
+notas = [8,7,9,10,6]
+suma = 0
+cantidad = 0
+for nota in notas:
+    suma = suma + nota
+    cantidad = cantidad + 1
+promedio = suma / cantidad
+print(f"El promedio es: {promedio}")
+# %%
+
+palabra = input("Ingrese una palabra: ")
+vocales = 0
+consonantes = 0
+total = 0
+for letra in palabra:
+    if letra != " ":
+        total = total + 1
+        letra = letra.lower()
+        if letra == "a" or letra == "e" or letra == "i" or letra == "o" or letra == "u":
+            vocales = vocales + 1
+        else:
+            consonantes = consonantes + 1
+print("Total:", total)
+print("Vocales:", vocales)
+print("Consonantes:", consonantes)
+
+
+
