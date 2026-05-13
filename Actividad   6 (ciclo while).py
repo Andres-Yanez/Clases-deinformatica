@@ -61,5 +61,29 @@ print("Total:", total)
 print("Vocales:", vocales)
 print("Consonantes:", consonantes)
 
+#%%
+it_companies = {"Facebook","Facebook" "Google", "Apple", "Amazon"}
+for company in it_companies:
+    print(company)
+#%%
+asistentes = {'Ana', 'Luis', 'María', 'Ana', 'Carlos', 'Luis', 'Sofía'}
+for estudiante in asistentes:
+    print('Generar certificado para:', estudiante)
 
-
+#%%
+lista=[1,2,3,4,5]
+numbers = input("Ingrese un numero: ")
+for number in lista:
+    if number == 3 :
+        print("Numero encontrado")
+        break
+else:
+    print("Numero no encontrado")    
+# %%
+cedula = input("Ingrese su numero de cedula: ")
+cedula_limpia = ""
+for caracter in cedula:
+    if caracter == '-' or caracter ==  "":
+        continue
+    cedula_limpia = cedula_limpia + caracter
+print(cedula_limpia)
