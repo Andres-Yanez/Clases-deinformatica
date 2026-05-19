@@ -31,3 +31,5 @@ print("Cantidad de letras:", letras)
 print("Cantidad de numeros:", numeros)
 print("Veces que aparece la letra o:", contador_o)
 
+
+
