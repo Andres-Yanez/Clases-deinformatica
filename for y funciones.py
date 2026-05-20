@@ -32,18 +32,36 @@ for numero in range(5):
         pass
     print(numero)
 
-##
+
+suma = 0
+cantidad = int(input("Ingrese la cantidad de notas: "))
+if cantidad < 2:
+    print("No es posible calcular el promedio con menos de 2 notas.")
+else:
+    contador = 0
+    while True:
+        nota = float(input(f"Ingrese la nota {contador}: "))
+        suma += nota
+        contador += 1
+        if contador == cantidad:
+            break
+    promedio = suma / cantidad
+    print(f"El promedio es: {promedio}")
+
+#tabla de multiplicar
 numero = int(input("Ingrese un número: "))
-
-for i in range(1, 11):
+inferior= int(input("Desde que numero desea ver: "))
+superior= int(input("Hasta que numero desea ver: "))
+for i in range(inferior, superior + 1 ):
     resultado = numero * i
-    print(numero, "x", i, "=", resultado)
+    print(f"{numero} x {i} = {resultado}")
 
-
-
-suma= 0
-for number in range(5):
-    nota= float(input("Ingrese la nota: "))
-    suma= suma + nota
-promedio= suma / 5
-print(f"El promedio es: {promedio}")
+#promedio
+notas = [5, 8, 9, 7, 10]
+suma=0
+cantidad=0
+for i in range(1,4):
+    suma= suma + notas [i]
+    cantidad= cantidad + 1
+promedio= suma/ cantidad
+print("Promedio de notas parciales:",{promedio})
