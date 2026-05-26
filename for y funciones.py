@@ -85,3 +85,16 @@ for fila in range(1, 4):
         print(f"{nombre} asignado a Fila {fila} - Computadora {computadora}")
     # Este mensaje se muestra cuando termina la asignación de una fila completa
     print(f"Fin de la fila {fila}")
+#%%
+nombres =["Ana", "Luis", "María", "Carlos",
+    "Sofía", "Mateo", "Daniela", "Pedro",
+    "Valeria", "José", "Camila", "Andrés"]
+filas = 3
+computadoras_por_fila = 4
+indice = 0
+for fila in range(1, filas + 1):
+    for computadora in range(1, computadoras_por_fila + 1):
+        print(f"{nombres[indice]} asignado a Fila {fila} - Computadora {computadora}")
+        indice += 1
+    print(f"Fin de la fila {fila}")
+
